@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css"
+      integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>Hotel</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <div class="text">
+              <b class="luxury">LUXURY</b>
+              <b class="hotel">HOTEL</b>
+            </div>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a class="link" href="../home/index.html">Trang chủ</a></li>
+          <li>
+            <a class="link" href="../facilities/facilities.html">Tiện nghi</a>
+          </li>
+          <li><a class="link" href="../room/room.html#menu-room">Phòng</a></li>
+          <li><a class="link" href="../contact/contact.html">Liên hệ</a></li>
+          <li>
+            <!-- <a href="../login/index.html" class="btn">Đăng Nhập</a> -->
+          </li>
+        </ul>
+      </nav>
+
+      <div class="section__container header__container" id="home">
+        <h1 class="fist">WELCOME TO</h1>
+        <br />
+        <h1 class="second">LUXURY</h1>
+        <br />
+        <h1 class="third">HOTELS</h1>
+        <br />
+        <p>Đặt phòng ngay và tận hưởng sự sang trọng.</p>
+      </div>
+    </header>
+
+    <label class="bb8-toggle">
+      <input class="bb8-toggle__checkbox" type="checkbox" id="theme-toggle" />
+      <div class="bb8-toggle__container">
+        <div class="bb8-toggle__scenery">
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="bb8-toggle__star"></div>
+          <div class="tatto-1"></div>
+          <div class="tatto-2"></div>
+          <div class="gomrassen"></div>
+          <div class="hermes"></div>
+          <div class="chenini"></div>
+          <div class="bb8-toggle__cloud"></div>
+          <div class="bb8-toggle__cloud"></div>
+          <div class="bb8-toggle__cloud"></div>
+        </div>
+        <div class="bb8">
+          <div class="bb8__head-container">
+            <div class="bb8__antenna"></div>
+            <div class="bb8__antenna"></div>
+            <div class="bb8__head"></div>
+          </div>
+          <div class="bb8__body"></div>
+        </div>
+        <div class="artificial__hidden">
+          <div class="bb8__shadow"></div>
+        </div>
+      </div>
+    </label>
+    <section class="section__container booking__container">
+      <form action="/" class="booking__form">
+        <div class="input__group">
+          <div>
+            <p>Nhận phòng</p>
+            <div class="relative max-w-sm">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                  />
+                </svg>
+              </div>
+              <input
+                id="datepicker-checkin"
+                datepicker
+                datepicker-buttons
+                datepicker-autoselect-today
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Chọn ngày"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="input__group">
+          <div>
+            <p>Trả phòng</p>
+            <div class="relative max-w-sm">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                  />
+                </svg>
+              </div>
+              <input
+                id="datepicker-checkout"
+                datepicker
+                datepicker-buttons
+                datepicker-autoselect-today
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Chọn ngày"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="input__group">
+          <div>
+            <span><i class="ri-map-pin-line"></i></span>
+
+            <label for="underline_select" class="sr-only"
+              >Underline select</label
+            >
+            <select
+              id="underline_select"
+              class="block py-2.5 px-0 w-40 max-w-[90px] text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            >
+              <option selected>Chọn địa điểm</option>
+              <option value="An Giang">An Giang</option>
+              <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+              <option value="Bắc Giang">Bắc Giang</option>
+              <option value="Bắc Kạn">Bắc Kạn</option>
+              <option value="Bạc Liêu">Bạc Liêu</option>
+              <option value="Bắc Ninh">Bắc Ninh</option>
+              <option value="Bến Tre">Bến Tre</option>
+              <option value="Bình Định">Bình Định</option>
+              <option value="Bình Dương">Bình Dương</option>
+              <option value="Bình Phước">Bình Phước</option>
+              <option value="Bình Thuận">Bình Thuận</option>
+              <option value="Bình Thuận">Bình Thuận</option>
+              <option value="Cà Mau">Cà Mau</option>
+              <option value="Cao Bằng">Cao Bằng</option>
+              <option value="Đắk Lắk">Đắk Lắk</option>
+              <option value="Đắk Nông">Đắk Nông</option>
+              <option value="Điện Biên">Điện Biên</option>
+              <option value="Đồng Nai">Đồng Nai</option>
+              <option value="Đồng Tháp">Đồng Tháp</option>
+              <option value="Đồng Tháp">Đồng Tháp</option>
+              <option value="Gia Lai">Gia Lai</option>
+              <option value="Hà Giang">Hà Giang</option>
+              <option value="Hà Nam">Hà Nam</option>
+              <option value="Hà Tĩnh">Hà Tĩnh</option>
+              <option value="Hải Dương">Hải Dương</option>
+              <option value="Hậu Giang">Hậu Giang</option>
+              <option value="Hòa Bình">Hòa Bình</option>
+              <option value="Hưng Yên">Hưng Yên</option>
+              <option value="Khánh Hòa">Khánh Hòa</option>
+              <option value="Kiên Giang">Kiên Giang</option>
+              <option value="Kon Tum">Kon Tum</option>
+              <option value="Lai Châu">Lai Châu</option>
+              <option value="Lâm Đồng">Lâm Đồng</option>
+              <option value="Lạng Sơn">Lạng Sơn</option>
+              <option value="Lào Cai">Lào Cai</option>
+              <option value="Long An">Long An</option>
+              <option value="Nam Định">Nam Định</option>
+              <option value="Nghệ An">Nghệ An</option>
+              <option value="Ninh Bình">Ninh Bình</option>
+              <option value="Ninh Thuận">Ninh Thuận</option>
+              <option value="Phú Thọ">Phú Thọ</option>
+              <option value="Quảng Bình">Quảng Bình</option>
+              <option value="Quảng Bình">Quảng Bình</option>
+              <option value="Quảng Ngãi">Quảng Ngãi</option>
+              <option value="Quảng Ninh">Quảng Ninh</option>
+              <option value="Quảng Trị">Quảng Trị</option>
+              <option value="Sóc Trăng">Sóc Trăng</option>
+              <option value="Sơn La">Sơn La</option>
+              <option value="Tây Ninh">Tây Ninh</option>
+              <option value="Thái Bình">Thái Bình</option>
+              <option value="Thái Nguyên">Thái Nguyên</option>
+              <option value="Thanh Hóa">Thanh Hóa</option>
+              <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+              <option value="Tiền Giang">Tiền Giang</option>
+              <option value="Trà Vinh">Trà Vinh</option>
+              <option value="Tuyên Quang">Tuyên Quang</option>
+              <option value="Vĩnh Long">Vĩnh Long</option>
+              <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+              <option value="Yên Bái">Yên Bái</option>
+              <option value="Phú Yên">Phú Yên</option>
+              <option value="Tp.Cần Thơ">Tp.Cần Thơ</option>
+              <option value="Tp.Đà Nẵng">Tp.Đà Nẵng</option>
+              <option value="Tp.Hải Phòng">Tp.Hải Phòng</option>
+              <option value="Tp.Hà Nội">Tp.Hà Nội</option>
+              <option value="TP  HCM">TP HCM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input__group input__btn">
+          <!-- <button class="btn">Tìm</button> -->
+          <a href="../room/room.html#menu-room" class="btn" type="submit"
+            >Tìm</a
+          >
+        </div>
+      </form>
+    </section>
+
+    <section class="title-body">
+      <p class="title-about">
+        KHÁM PHÁ SỰ SANG TRỌNG THĂNG HOA, TRẢI NGHIỆM TUYỆT VỜI
+      </p>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__content">
+        <!-- <p class="section__subheader"></p> -->
+        <div class="section_line">
+          <h2 class="section__header">
+            Trải nghiệm sang trọng, một tầm cao mới
+          </h2>
+          <p class="section__description">
+            Các phòng của chúng tôi được thiết kế để đưa<br />
+            bạn vào một không gian thư giãn tuyệt vời. <br />
+            Hãy quên đi những lo toan thường ngày <br />
+            và tìm cho mình một thiên đường riêng tư.
+          </p>
+          <div class="about__btn">
+            <a href="../room/room.html#menu-room" class="btn" type="submit"
+              >Khám phá</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="about__image">
+        <img src="./img/room-home.jpg" alt="rome-body" />
+      </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__content">
+        <!-- <p class="section__subheader"></p> -->
+        <div class="section_line">
+          <h2 class="section__header">Hãy để lại những lo âu</h2>
+          <p class="section__description">
+            Để lại mọi lo toan, tận hưởng cuộc sống biển xanh, <br />
+            cát trắng, nắng vàng. Đại dương rộng lớn như níu <br />
+            giữ thời gian, mang đến tâm hồn bình yên.
+          </p>
+          <div class="about__btn">
+            <a href="../room/room.html#menu-room" class="btn" type="submit"
+              >Khám phá</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="about__image">
+        <img src="./img/beach.jpg" alt="beach-body" />
+      </div>
+    </section>
+
+    <section class="title-body">
+      <p class="title-room">PHÒNG CỦA CHÚNG TÔI</p>
+    </section>
+
+    <section class="section__container room__container">
+      <h2 class="section__header">Nơi bắt đầu những giây phút thư giãn</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="./img/room-1.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Phòng tổng thống</h4>
+            <p>
+              Thưởng thức sự sang trọng và chiêm ngưỡng khung cảnh biển tuyệt
+              đẹp
+            </p>
+            <h5>Giá <span>2.990.000 VNĐ/Đêm</span></h5>
+            <a href="../viewroom/viewroom01.html" class="btn" type="submit"
+              >Đặt phòng</a
+            >
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="./img/room-2.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Phòng đơn</h4>
+            <p>
+              Trải nghiệm sự thanh lịch đô thị và tiện nghi hiện đại ngay giữa
+              lòng thành phố
+            </p>
+            <h5>Giá <span>1.990.000 VNĐ/Đêm</span></h5>
+            <a href="../viewroom/viewroom02.html" class="btn" type="submit"
+              >Đặt phòng</a
+            >
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="./img/room-3.jpg" alt="room" />
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details">
+            <h4>Phòng đôi</h4>
+            <p>
+              Rộng rãi và hấp dẫn, hoàn hảo để tạo ra những kỷ niệm đáng nhớ với
+              những người thân yêu
+            </p>
+            <h5>Giá <span>2.490.000 VNĐ/Đêm</span></h5>
+            <a href="../viewroom/viewroom03.html" class="btn" type="submit"
+              >Đặt phòng</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <div class="service__content">
+          <p class="section__subheader">DỊCH VỤ</p>
+          <h2 class="section__header">Cao cấp</h2>
+          <ul class="service__list">
+            <li>
+              <span><i class="ri-headphone-line"></i></span>
+              Phòng họp
+            </li>
+            <li>
+              <span><i class="ri-shield-star-line"></i></span>
+              An ninh cao cấp
+            </li>
+            <li>
+              <span><i class="ri-24-hours-line"></i></span>
+              Dịch vụ phòng 24/24
+            </li>
+
+            <li>
+              <span><i class="ri-map-2-line"></i></span>
+              Hỗ trợ hướng dẫn du lịch
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__content">
+        <div class="banner__card">
+          <h4 class="counter">5★</h4>
+          <p>Xếp hạng</p>
+        </div>
+        <div class="banner__card">
+          <h4 class="counter add-counter" data-start="500">500</h4>
+          <p>Đặt chỗ đã hoàn tất</p>
+        </div>
+        <div class="banner__card">
+          <h4 class="counter add-counter" data-start="600">600</h4>
+          <p>Lượt đánh giá</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="explore">
+      <p class="section__subheader">KHÁM PHÁ</p>
+      <h2 class="section__header">Hôm nay có gì</h2>
+      <div class="title-services">
+        <div class="box-container">
+          <div class="box">
+            <img src="./img/service1.png" alt="" />
+            <h3>Hồ bơi</h3>
+          </div>
+
+          <div class="box">
+            <img src="./img/service2.png" alt="" />
+            <h3>Buffet</h3>
+          </div>
+
+          <div class="box">
+            <img src="./img/service3.png" alt="" />
+            <h3>Nhà hàng</h3>
+          </div>
+
+          <div class="box">
+            <img src="./img/service4.png" alt="" />
+            <h3>Phòng gym</h3>
+          </div>
+
+          <div class="box">
+            <img src="./img/service5.png" alt="" />
+            <h3>Phòng spa</h3>
+          </div>
+
+          <div class="box">
+            <img src="./img/service6.png" alt="" />
+            <h3>Resort</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- new thêm -->
+      <div class="gallery" id="gallery">
+        <div class="swiper gallery-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery1.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery1.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery2.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery2.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery3.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery3.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery4.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery4.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery5.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery5.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery6.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery6.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery7.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery7.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery8.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery8.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery9.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery9.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery10.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery10.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery11.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery11.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery12.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery12.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery13.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery13.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide slide">
+              <a
+                href="./img/gallery14.jpg"
+                class="glightbox"
+                data-gallery="gallery"
+              >
+                <img src="./img/gallery14.jpg" alt="" />
+                <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      <div class="explore__bg">
+        <div class="explore__content">
+          <p class="section__description">10th MAR 2023</p>
+          <h4>A New Menu Is Available In Our Hotel</h4>
+          <button class="btn">Continue</button>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="review" id="review">
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <h2 class="heading-review">Đánh giá</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              Một trải nghiệm đẳng cấp từ đầu đến cuối. Khách sạn này không chỉ
+              đẹp về mặt kiến trúc mà còn có dịch vụ tuyệt vời. Nhân viên luôn
+              thân thiện và sẵn sàng giúp đỡ mọi lúc. Khung cảnh biển từ phòng
+              nhìn ra thực sự ngoạn mục, mang lại cảm giác thư giãn tối đa. Rất
+              đáng để quay lại và tận hưởng thêm lần nữa!
+            </p>
+            <div class="user">
+              <img src="./img/pic-1.png" alt="" />
+              <div class="user-info">
+                <h3>Hồng Anh</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <h2 class="heading-review">đánh giá</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              Tôi và gia đình đã có một kỳ nghỉ thật sự đáng nhớ tại khách sạn
+              này. Không gian thoải mái, tiện nghi hiện đại và dịch vụ hoàn hảo.
+              Đặc biệt, bữa sáng buffet với nhiều lựa chọn phong phú, món ăn
+              ngon và tươi mới. Đây thực sự là một kỳ nghỉ trong mơ mà chúng tôi
+              luôn mong đợi.
+            </p>
+            <div class="user">
+              <img src="./img/pic-2.png" alt="" />
+              <div class="user-info">
+                <h3>Thủy Đặng</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <h2 class="heading-review">đánh giá</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              Dịch vụ ở đây vượt xa sự mong đợi của tôi. Nhân viên rất nhiệt
+              tình, thân thiện và luôn sẵn sàng giúp đỡ khi cần. Phòng ốc được
+              dọn dẹp sạch sẽ hàng ngày, tiện nghi đầy đủ và cao cấp. Tôi cảm
+              thấy rất thoải mái và hài lòng với mọi thứ ở đây. Chắc chắn tôi sẽ
+              giới thiệu cho bạn bè và người thân.
+            </p>
+            <div class="user">
+              <img src="./img/pic-3.png" alt="" />
+              <div class="user-info">
+                <h3>Quốc Tuấn</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <h2 class="heading-review">đánh giá</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              Tôi thực sự ấn tượng với không gian và thiết kế của khách sạn.
+              Phòng ốc rộng rãi, sạch sẽ và được trang trí rất tinh tế. View từ
+              phòng nhìn ra biển cực kỳ đẹp, đặc biệt là vào lúc bình minh và
+              hoàng hôn. Mọi thứ ở đây đều trên cả mong đợi, từ dịch vụ, tiện
+              nghi cho đến không gian.
+            </p>
+            <div class="user">
+              <img src="./img/pic-4.png" alt="" />
+              <div class="user-info">
+                <h3>Kiều Hạnh</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <h2 class="heading-review">đánh giá</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              Đây là một trong những kỳ nghỉ đáng nhớ nhất của chúng tôi. Khách
+              sạn mang đến cho chúng tôi một trải nghiệm tuyệt vời với những
+              tiện ích và dịch vụ đỉnh cao. Hồ bơi vô cực, spa thư giãn và nhà
+              hàng với món ăn ngon miệng. Chúng tôi thực sự hài lòng và chắc
+              chắn sẽ quay lại trong tương lai gần.
+            </p>
+            <div class="user">
+              <img src="./img/pic-5.png" alt="" />
+              <div class="user-info">
+                <h3>Quốc Hưng</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <h2 class="heading-review">đánh giá</h2>
+            <i class="fas fa-quote-right"></i>
+            <p>
+              ôi rất ấn tượng với tiện nghi trong phòng của khách sạn. Giường
+              ngủ rất thoải mái, phòng tắm sang trọng và đầy đủ các tiện ích cao
+              cấp. Đặc biệt, view từ phòng nhìn ra toàn cảnh thành phố rất đẹp
+              và lãng mạn. Đây thực sự là một trải nghiệm tuyệt vời mà tôi sẽ
+              không bao giờ quên.
+            </p>
+            <div class="user">
+              <img src="./img/pic-6.png" alt="" />
+              <div class="user-info">
+                <h3>Thảo Trúc</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="text">
+            <h2>LUXURY</h2>
+            <h3>HOTELS</h3>
+          </div>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> &ensp; 720A Đ. Điện Biên
+            Phủ, Bình Thạnh, Hồ Chí Minh
+          </p>
+          <p><i class="fa-solid fa-phone"></i>&ensp; +84 6666 9999</p>
+          <p>
+            <a href="mailto:luxury_hotels@gmail.com">
+              <i class="fa-solid fa-envelope"></i>&ensp; luxury_hotels@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="footer-contact">
+          <p><a href="#">Về chúng tôi</a></p>
+          <p><a href="#">Liên hệ</a></p>
+          <p><a href="#">Điều khoản và điều kiện</a></p>
+        </div>
+        <div class="footer-social">
+          <p>
+            <a href="https://www.facebook.com/khachsanluxury"
+              ><img src="./img/facebook.png" alt="facebook" /> Facebook</a
+            >
+          </p>
+          <p>
+            <a href="https://www.youtube.com/@luxurytravelmaster/videos"
+              ><img src="./img/youtube.png" alt="youtube" /> Youtube</a
+            >
+          </p>
+          <p>
+            <a href="https://www.instagram.com/luxuryhotelksamil/"
+              ><img src="./img/instagram.png" alt="instagram" /> Instagram</a
+            >
+          </p>
+          <p>
+            <a href="https://x.com/SLHLuxuryHotels"
+              ><img src="./img/twitter.png" alt="twitter" /> Twitter</a
+            >
+          </p>
+        </div>
+        <div class="footer-subscribe">
+          <label for="email">Theo dõi bản tin của chúng tôi</label>
+          <form>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <input type="submit" value="OK" />
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Group 10. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"
+      integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="custom.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
