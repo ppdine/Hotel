@@ -1,0 +1,132 @@
+/* Importing Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1abc9c 40%, #2ecc71 100%);
+}
+
+.container form {
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid #2ecc71;
+}
+
+.inputBox {
+  margin: 20px 0;
+}
+
+.inputBox span {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+  color: #555;
+}
+
+.inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+.inputBox input:focus {
+  border: 1px solid #2ecc71;
+  background: #fff;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background: #27ae60;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #1abc9c;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #27ae60;
+}
+
+.popup-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #27ae60;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #1abc9c;
+}

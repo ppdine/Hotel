@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="payment-form">
+        <h3 class="title">payment</h3>
+
+        <div class="inputBox">
+          <span>Tên tài khoản ngân hàng :</span>
+          <input type="text" placeholder="" />
+        </div>
+        <div class="inputBox">
+          <span>Số tài khoản :</span>
+          <input type="text" placeholder="" />
+        </div>
+        <div class="inputBox">
+          <span>Ngày hết hạn :</span>
+          <input type="text" placeholder="MM/YYYY" />
+        </div>
+        <div class="inputBox">
+          <span>CVV :</span>
+          <input type="text" placeholder="" />
+        </div>
+
+        <input type="submit" value="Thanh toán" class="submit-btn" />
+      </form>
+    </div>
+
+    <!-- Success Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>Đặt phòng thành công!</h2>
+        <p>Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi.</p>
+        <button id="close-popup" class="close-btn">Đóng</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

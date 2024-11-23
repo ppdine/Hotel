@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.css"
+    />
+    <link rel="stylesheet" href="styleroom.css" />
+    <title>Rooms</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <div class="text">
+              <b class="luxury">LUXURY</b>
+              <b class="hotel">HOTEL</b>
+            </div>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a class="link" href="../home/index.html">Trang chủ</a></li>
+          <li>
+            <a class="link" href="../facilities/facilities.html">Tiện nghi</a>
+          </li>
+          <li><a class="link" href="../room/room.html">Phòng</a></li>
+          <li><a class="link" href="../contact/contact.html">Liên hệ</a></li>
+          <li>
+            <!-- <a href="../login/index.html" class="btn">Đăng Nhập</a> -->
+          </li>
+        </ul>
+      </nav>
+
+      <div class="section__container header__container" id="home">
+        <h1 class="fist">WELCOME TO</h1>
+        <br />
+        <h1 class="second">LUXURY</h1>
+        <br />
+        <h1 class="third">HOTELS</h1>
+        <br />
+        <p>Đặt phòng ngay và tận hưởng sự sang trọng.</p>
+      </div>
+    </header>
+    <section class="section__container booking__container">
+      <form action="/" class="booking__form">
+        <div class="input__group">
+          <div>
+            <p>Nhận phòng</p>
+            <div class="relative max-w-sm">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                  />
+                </svg>
+              </div>
+              <input
+                id="datepicker-checkin"
+                datepicker
+                datepicker-buttons
+                datepicker-autoselect-today
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Chọn ngày"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="input__group">
+          <div>
+            <p>Trả phòng</p>
+            <div class="relative max-w-sm">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                  />
+                </svg>
+              </div>
+              <input
+                id="datepicker-checkout"
+                datepicker
+                datepicker-buttons
+                datepicker-autoselect-today
+                type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Chọn ngày"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="input__group">
+          <div>
+            <span><i class="ri-map-pin-line"></i></span>
+
+            <label for="underline_select" class="sr-only"
+              >Underline select</label
+            >
+            <select
+              id="underline_select"
+              class="block py-2.5 px-0 w-40 max-w-[90px] text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            >
+              <option selected>Chọn địa điểm</option>
+              <option value="An Giang">An Giang</option>
+              <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+              <option value="Bắc Giang">Bắc Giang</option>
+              <option value="Bắc Kạn">Bắc Kạn</option>
+              <option value="Bạc Liêu">Bạc Liêu</option>
+              <option value="Bắc Ninh">Bắc Ninh</option>
+              <option value="Bến Tre">Bến Tre</option>
+              <option value="Bình Định">Bình Định</option>
+              <option value="Bình Dương">Bình Dương</option>
+              <option value="Bình Phước">Bình Phước</option>
+              <option value="Bình Thuận">Bình Thuận</option>
+              <option value="Bình Thuận">Bình Thuận</option>
+              <option value="Cà Mau">Cà Mau</option>
+              <option value="Cao Bằng">Cao Bằng</option>
+              <option value="Đắk Lắk">Đắk Lắk</option>
+              <option value="Đắk Nông">Đắk Nông</option>
+              <option value="Điện Biên">Điện Biên</option>
+              <option value="Đồng Nai">Đồng Nai</option>
+              <option value="Đồng Tháp">Đồng Tháp</option>
+              <option value="Đồng Tháp">Đồng Tháp</option>
+              <option value="Gia Lai">Gia Lai</option>
+              <option value="Hà Giang">Hà Giang</option>
+              <option value="Hà Nam">Hà Nam</option>
+              <option value="Hà Tĩnh">Hà Tĩnh</option>
+              <option value="Hải Dương">Hải Dương</option>
+              <option value="Hậu Giang">Hậu Giang</option>
+              <option value="Hòa Bình">Hòa Bình</option>
+              <option value="Hưng Yên">Hưng Yên</option>
+              <option value="Khánh Hòa">Khánh Hòa</option>
+              <option value="Kiên Giang">Kiên Giang</option>
+              <option value="Kon Tum">Kon Tum</option>
+              <option value="Lai Châu">Lai Châu</option>
+              <option value="Lâm Đồng">Lâm Đồng</option>
+              <option value="Lạng Sơn">Lạng Sơn</option>
+              <option value="Lào Cai">Lào Cai</option>
+              <option value="Long An">Long An</option>
+              <option value="Nam Định">Nam Định</option>
+              <option value="Nghệ An">Nghệ An</option>
+              <option value="Ninh Bình">Ninh Bình</option>
+              <option value="Ninh Thuận">Ninh Thuận</option>
+              <option value="Phú Thọ">Phú Thọ</option>
+              <option value="Quảng Bình">Quảng Bình</option>
+              <option value="Quảng Bình">Quảng Bình</option>
+              <option value="Quảng Ngãi">Quảng Ngãi</option>
+              <option value="Quảng Ninh">Quảng Ninh</option>
+              <option value="Quảng Trị">Quảng Trị</option>
+              <option value="Sóc Trăng">Sóc Trăng</option>
+              <option value="Sơn La">Sơn La</option>
+              <option value="Tây Ninh">Tây Ninh</option>
+              <option value="Thái Bình">Thái Bình</option>
+              <option value="Thái Nguyên">Thái Nguyên</option>
+              <option value="Thanh Hóa">Thanh Hóa</option>
+              <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+              <option value="Tiền Giang">Tiền Giang</option>
+              <option value="Trà Vinh">Trà Vinh</option>
+              <option value="Tuyên Quang">Tuyên Quang</option>
+              <option value="Vĩnh Long">Vĩnh Long</option>
+              <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+              <option value="Yên Bái">Yên Bái</option>
+              <option value="Phú Yên">Phú Yên</option>
+              <option value="Tp.Cần Thơ">Tp.Cần Thơ</option>
+              <option value="Tp.Đà Nẵng">Tp.Đà Nẵng</option>
+              <option value="Tp.Hải Phòng">Tp.Hải Phòng</option>
+              <option value="Tp.Hà Nội">Tp.Hà Nội</option>
+              <option value="TP  HCM">TP HCM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input__group input__btn">
+          <a href="../room/room.html#menu-room" class="btn" type="submit">Tìm</a>
+        </div>
+      </form>
+    </section>
+
+
+    <section class="title-body">
+      <h2 class="title-about">
+        PHÒNG VÀ GIÁ PHÒNG
+      </h2>
+      <p>
+        Mỗi phòng sáng sủa, tràn ngập ánh sáng của chúng tôi đều có mọi thứ bạn có thể cần cho một kỳ nghỉ thoải mái. Và vâng,
+      </p>
+      <p>
+        sự thoải mái không phải là mục tiêu duy nhất của chúng tôi, chúng tôi còn coi trọng thiết kế đẹp, đồ nội thất hiện đại bóng bẩy được bổ sung
+      </p>
+      <p>
+        bởi tông màu phong phú của bảng màu thiên nhiên có thể nhìn thấy từ các cửa sổ và sân hiên hướng biển của phòng chúng tôi.
+      </p>
+    </section>
+
+    <section class="section__container choose-room-p">
+      <section class="room-menu-p">
+        <header>
+          <p style="padding-left: 30px; font-size: 16px;">Hơn 200 lần lưu trú tại Bordeaux</p><hr>
+        </header>
+        <div>
+          <!-- page 1 -->
+          <div class="container-menu-room-p" id="menu-room">
+            <div class="left-menu-room-p">
+              
+              <!-- room 1 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home1.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Hoàng Gia</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </span>
+                     (732K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom01.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="4.000.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 2 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home2.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Căn hộ Hòa Bình</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (178K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom02.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="1.600.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 3 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home3.jpg" alt="room-1">
+                </div>  
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Căn hộ Bình An</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9734; &#9734;
+                    </span>
+                     (165K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom03.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="1.200.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 4 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home4.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Căn hộ Hoàng Kim</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (673K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom04.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="2.400.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 5 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home5.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Căn hộ Paradise</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </span>
+                     (890K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom05.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="3.700.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 6 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home6.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Chung cư Vĩnh Cửu</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </span>
+                     (859K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom06.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="3.500.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 7 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home7.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Chung cư Thiên Vương</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </span>
+                     (482K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom07.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="3.000.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 8 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home8.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Căn hộ Phú Quý</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (825K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom08.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="3.200.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 9 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home9.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Căn hộ Sao Kim</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (264K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom09.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="3.100.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 10 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home10.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Thiên Long</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (203K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom10.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="2.600.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 11 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home11.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Ánh Dương</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (178K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom11.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="2.300.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 12 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home12.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Lạc Viên</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (132K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom12.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="1.800.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 13 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home13.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Hoàng Yến</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (262K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom13.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="2.900.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 14 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home14.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Tinh Tú</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </span>
+                     (301K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom14.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="3.400.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 15 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home15.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Hương Quỳnh</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (189K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom15.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="2.100.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 16 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home16.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà An Nhiên</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (117K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom16.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="1.900.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 17 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home17.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Kim Long</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </span>
+                     (378K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom17.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="2.600.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 18 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home18.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Thịnh Vượng</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (216K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom18.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="2.700.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 19 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home19.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Thiên Thanh</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9734;
+                    </span>
+                     (149K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom19.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="2.400.000vnđ/đêm" /></a>
+                </div>
+               </section>
+
+              <!-- room 20 -->
+               <section class="room-p">
+                <!-- picture -->
+                <div class="room-img-p">
+                  <img src="./img/room-living-home20.jpg" alt="room-1">
+                </div>
+                <!-- info -->
+                <div class="room-info-p">
+                  <p>Toàn bộ ngôi nhà ở Bordeaux</p>
+                  <p class="room__username-p">Tòa nhà Đế Vương</p>
+                  <br>
+                  <p>6-4 khách - Toàn bộ nhà - 5 giường - 3 phòng tắm</p>
+                  <p>Wifi - Bếp - Bãi đậu xe miễn phí</p>
+                  <br>
+                  <p>
+                    <span class="room__star-p">
+                      &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </span>
+                     (251K đánh giá)<br />
+                    </p>
+                  <a href="../viewroom/viewroom20.html"><input type="submit" class="btn-p" value="Xem chi tiết phòng" /></a>
+                  <a href="../payment/index.html"><input type="submit" class="btn-p" value="4.300.000vnđ/đêm" /></a>
+                </div>
+               </section>
+            </div>
+          </div>
+      </section>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="text">
+            <h2>LUXURY</h2>
+            <h3>HOTELS</h3>
+          </div>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> &ensp; 720A Đ. Điện Biên
+            Phủ, Bình Thạnh, Hồ Chí Minh
+          </p>
+          <p><i class="fa-solid fa-phone"></i>&ensp; +84 6666 9999</p>
+          <p>
+            <a href="mailto:luxury_hotels@gmail.com">
+              <i class="fa-solid fa-envelope"></i>&ensp; luxury_hotels@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="footer-contact">
+          <p><a href="#">Về chúng tôi</a></p>
+          <p><a href="#">Liên hệ</a></p>
+          <p><a href="#">Điều khoản và điều kiện</a></p>
+        </div>
+        <div class="footer-social">
+          <p>
+            <a href="https://www.facebook.com/khachsanluxury"
+              ><img src="./img/facebook.png" alt="facebook" /> Facebook</a
+            >
+          </p>
+          <p>
+            <a href="https://www.youtube.com/@luxurytravelmaster/videos"
+              ><img src="./img/youtube.png" alt="youtube" /> Youtube</a
+            >
+          </p>
+          <p>
+            <a href="https://www.instagram.com/luxuryhotelksamil/"
+              ><img src="./img/instagram.png" alt="instagram" /> Instagram</a
+            >
+          </p>
+          <p>
+            <a href="https://x.com/SLHLuxuryHotels"
+              ><img src="./img/twitter.jpg" alt="twitter" /> Twitter</a
+            >
+          </p>
+        </div>
+        <div class="footer-subscribe">
+          <label for="email">Theo dõi bản tin của chúng tôi</label>
+          <form>
+            <input type="email" id="email" placeholder="Nhập Email" required />
+            <input type="submit" value="OK" />
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Group 10. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="library.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.4.1/flowbite.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <div class="text">
+              <b class="luxury">LUXURY</b>
+              <b class="hotel">HOTEL</b>
+            </div>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a class="link" href="../home/index.html">Trang chủ</a></li>
+          <li>
+            <a class="link" href="../facilities/facilities.html">Tiện nghi</a>
+          </li>
+          <li><a class="link" href="../room/room.html">Phòng</a></li>
+          <li><a class="link" href="../contact/contact.html">Liên hệ</a></li>
+          <li>
+            <!-- <a href="#" class="btn">Đăng Nhập</a> -->
+          </li>
+        </ul>
+      </nav>
+
+      <div class="section__container header__container" id="home">
+        <h1 class="contact--us">HỖ TRỢ</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container--info">
+        <section class="box--content">
+          <header class="content--info">
+            <h2>Liên hệ</h2>
+          </header>
+          <div class="contact--report">
+            <span class="admin--info">Lý Hồ Tuấn An - 2251120266: </span><br />
+            <span class="admin--contact">
+              0941400924 - 2251120266@ut.edu.vn
+            </span>
+            <br />
+          </div>
+        </section>
+
+        <section class="box--content">
+          <header class="content--info">
+            <h2>Gửi hỗ trợ</h2>
+          </header>
+          <form class="contact--report" id="contact-form">
+            <!-- Form fields -->
+            <label>Tên</label><br />
+            <input
+              type="text"
+              name="first--name"
+              placeholder="Nhập Tên"
+            /><br />
+            <span class="error-message" id="first-name-error"
+              >Vui lòng nhập tên của bạn.</span
+            >
+
+            <label>Họ</label><br />
+            <input type="text" name="last--name" placeholder="Nhập Họ" /><br />
+            <span class="error-message" id="last-name-error"
+              >Vui lòng nhập họ của bạn.</span
+            >
+
+            <label>Email của bạn</label><br />
+            <input
+              type="email"
+              name="your--email"
+              placeholder="Nhập Email"
+            /><br />
+            <span class="error-message" id="email-error"
+              >Vui lòng nhập email hợp lệ.</span
+            >
+
+            <label>Tỉnh</label><br />
+            <select name="province">
+              <option selected>Chọn tỉnh</option>
+              <option value="An Giang">An Giang</option>
+              <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+              <option value="Bắc Giang">Bắc Giang</option>
+              <option value="Bắc Kạn">Bắc Kạn</option>
+              <option value="Bạc Liêu">Bạc Liêu</option>
+              <option value="Bắc Ninh">Bắc Ninh</option>
+              <option value="Bến Tre">Bến Tre</option>
+              <option value="Bình Định">Bình Định</option>
+              <option value="Bình Dương">Bình Dương</option>
+              <option value="Bình Phước">Bình Phước</option>
+              <option value="Bình Thuận">Bình Thuận</option>
+              <option value="Bình Thuận">Bình Thuận</option>
+              <option value="Cà Mau">Cà Mau</option>
+              <option value="Cao Bằng">Cao Bằng</option>
+              <option value="Đắk Lắk">Đắk Lắk</option>
+              <option value="Đắk Nông">Đắk Nông</option>
+              <option value="Điện Biên">Điện Biên</option>
+              <option value="Đồng Nai">Đồng Nai</option>
+              <option value="Đồng Tháp">Đồng Tháp</option>
+              <option value="Đồng Tháp">Đồng Tháp</option>
+              <option value="Gia Lai">Gia Lai</option>
+              <option value="Hà Giang">Hà Giang</option>
+              <option value="Hà Nam">Hà Nam</option>
+              <option value="Hà Tĩnh">Hà Tĩnh</option>
+              <option value="Hải Dương">Hải Dương</option>
+              <option value="Hậu Giang">Hậu Giang</option>
+              <option value="Hòa Bình">Hòa Bình</option>
+              <option value="Hưng Yên">Hưng Yên</option>
+              <option value="Khánh Hòa">Khánh Hòa</option>
+              <option value="Kiên Giang">Kiên Giang</option>
+              <option value="Kon Tum">Kon Tum</option>
+              <option value="Lai Châu">Lai Châu</option>
+              <option value="Lâm Đồng">Lâm Đồng</option>
+              <option value="Lạng Sơn">Lạng Sơn</option>
+              <option value="Lào Cai">Lào Cai</option>
+              <option value="Long An">Long An</option>
+              <option value="Nam Định">Nam Định</option>
+              <option value="Nghệ An">Nghệ An</option>
+              <option value="Ninh Bình">Ninh Bình</option>
+              <option value="Ninh Thuận">Ninh Thuận</option>
+              <option value="Phú Thọ">Phú Thọ</option>
+              <option value="Quảng Bình">Quảng Bình</option>
+              <option value="Quảng Bình">Quảng Bình</option>
+              <option value="Quảng Ngãi">Quảng Ngãi</option>
+              <option value="Quảng Ninh">Quảng Ninh</option>
+              <option value="Quảng Trị">Quảng Trị</option>
+              <option value="Sóc Trăng">Sóc Trăng</option>
+              <option value="Sơn La">Sơn La</option>
+              <option value="Tây Ninh">Tây Ninh</option>
+              <option value="Thái Bình">Thái Bình</option>
+              <option value="Thái Nguyên">Thái Nguyên</option>
+              <option value="Thanh Hóa">Thanh Hóa</option>
+              <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+              <option value="Tiền Giang">Tiền Giang</option>
+              <option value="Trà Vinh">Trà Vinh</option>
+              <option value="Tuyên Quang">Tuyên Quang</option>
+              <option value="Vĩnh Long">Vĩnh Long</option>
+              <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+              <option value="Yên Bái">Yên Bái</option>
+              <option value="Phú Yên">Phú Yên</option>
+              <option value="Tp.Cần Thơ">Tp.Cần Thơ</option>
+              <option value="Tp.Đà Nẵng">Tp.Đà Nẵng</option>
+              <option value="Tp.Hải Phòng">Tp.Hải Phòng</option>
+              <option value="Tp.Hà Nội">Tp.Hà Nội</option>
+              <option value="TP HCM">TP HCM</option></select
+            ><br />
+            <span class="error-message" id="province-error"
+              >Vui lòng chọn tỉnh của bạn.</span
+            >
+
+            <label>Số điện thoại của bạn</label><br />
+            <input
+              type="text"
+              name="phone--number"
+              placeholder="Nhập số điện thoại"
+            /><br />
+            <span class="error-message" id="phone-error"
+              >Vui lòng nhập số điện thoại hợp lệ.</span
+            >
+
+            <label>Chúng tôi có thể giúp gì cho bạn?</label>
+            <textarea
+              name="support"
+              placeholder="Những gì bạn cần hỗ trợ."
+            ></textarea>
+            <span class="error-message" id="support-error"
+              >Vui lòng nhập nội dung hỗ trợ.</span
+            >
+            <input type="submit" class="btn" name="submit" value="Gửi" />
+          </form>
+        </section>
+      </div>
+      <!-- Modal structure -->
+      <div class="modal-overlay" id="success-modal">
+        <div class="modal-content">
+          <dotlottie-player
+            src="https://lottie.host/0733020c-8eab-4fc4-b0e5-07ae10f94f1b/28ki83MpBe.json"
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px"
+            loop
+            autoplay
+          ></dotlottie-player>
+          <h1>Cảm ơn bạn đã liên hệ!</h1>
+          <h2>Chúng tôi sẽ trả lời sớm nhất có thể.</h2>
+          <button onclick="closeModal()">Đóng</button>
+        </div>
+      </div>
+
+      <!-- Error Modal -->
+      <div class="modal-overlay" id="error-modal">
+        <div class="modal-content">
+          <dotlottie-player
+            src="https://lottie.host/6e598887-84f5-40d2-95dc-d92feb9744cb/5aCxUyHW2v.json"
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px"
+            loop
+            autoplay
+          ></dotlottie-player>
+          <h2>Gửi email thất bại!</h2>
+          <p>Vui lòng thử lại sau.</p>
+          <button onclick="closeModal('error-modal')">Đóng</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="text">
+            <h2>LUXURY</h2>
+            <h3>HOTELS</h3>
+          </div>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> &ensp; 720A Đ. Điện Biên
+            Phủ, Bình Thạnh, Hồ Chí Minh
+          </p>
+          <p><i class="fa-solid fa-phone"></i>&ensp; +84 6666 9999</p>
+          <p>
+            <a href="mailto:luxury_hotels@gmail.com">
+              <i class="fa-solid fa-envelope"></i>&ensp; luxury_hotels@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="footer-contact">
+          <p><a href="#">Về chúng tôi</a></p>
+          <p><a href="#">Liên hệ</a></p>
+          <p><a href="#">Điều khoản và điều kiện</a></p>
+        </div>
+        <div class="footer-social">
+          <p>
+            <a href="https://www.facebook.com/khachsanluxury"
+              ><img src="./img/facebook.png" alt="facebook" /> Facebook</a
+            >
+          </p>
+          <p>
+            <a href="https://www.youtube.com/@luxurytravelmaster/videos"
+              ><img src="./img/youtube.png" alt="youtube" /> Youtube</a
+            >
+          </p>
+          <p>
+            <a href="https://www.instagram.com/luxuryhotelksamil/"
+              ><img src="./img/instagram.png" alt="instagram" /> Instagram</a
+            >
+          </p>
+          <p>
+            <a href="https://x.com/SLHLuxuryHotels"
+              ><img src="./img/twitter.png" alt="twitter" /> Twitter</a
+            >
+          </p>
+        </div>
+        <div class="footer-subscribe">
+          <label for="email">Theo dõi bản tin của chúng tôi</label>
+          <form>
+            <input type="email" id="email" placeholder="Nhập Email" required />
+            <input type="submit" value="OK" />
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Group 10. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
